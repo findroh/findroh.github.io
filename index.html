@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rohan Lalapet | Embedded Systems & Electrical Engineering</title>
+  <meta name="description" content="Portfolio of Your Name - Embedded Systems and Robotics projects." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="container">
+
+    <!-- HERO -->
+    <header class="hero">
+      <h1>Rohan Lalapet</h1>
+      <p class="subtitle">Electrical Engineer | Embedded Systems</p>
+
+      <div class="links">
+        <a href="mailto:findroh@gmail.com">Email</a>
+        <span class="dot">•</span>
+        <a href="https://www.linkedin.com/in/rohan-lalapet-35143b280/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <span class="dot">•</span>
+        <a href="https://github.com/findroh" target="_blank" rel="noreferrer">GitHub</a>
+        <span class="dot">•</span>
+        <span class="location">Dallas, TX</span>
+      </div>
+
+      <p class="blurb">
+        Hands-on engineer focused on hardware bring-up, embedded firmware, sensors, and system integration.
+        I like building real devices and debugging the hardware-software boundary.
+      </p>
+    </header>
+
+    <!-- SKILLS -->
+    <section>
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Hardware Skills</h3>
+          <ul>
+            <li>MCUs: ESP32</li>
+            <li>Interfaces: SPI, I2C, UART</li>
+            <li>Sensors: LiDAR, cameras</li>
+            <li>Measurement Tools: Oscilloscope, logic analyzer</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Software Skills</h3>
+          <ul>
+            <li>C / C++</li>
+            <li>Python, OpenCV</li>
+            <li>Embedded Linux (basic)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECT -->
+    <section>
+      <h2>Featured Project</h2>
+
+      <article class="project featured">
+        <div class="project-head">
+          <h3>Face Tracking Sentry</h3>
+          <p class="project-tagline">Facial recognition and tracking made possible on an edge device, capable of covering a whole room</p>
+        </div>
+
+        <div class="project-links">
+          <a class="btn" href="https://youtu.be/YVMmIdzbH5I" target="_blank" rel="noreferrer">Watch Demo Video</a>
+          <a class="btn" href="https://github.com/findroh/Face-Tracking-Sentry.git" target="_blank" rel="noreferrer">GitHub Repo</a>
+          <!-- Optional links (only if you have them) -->
+          <a class="btn ghost" href="https://docs.google.com/document/d/1UUCR2uwxsr5--QKeqgMyGCiQSlFWtdHHD2G9mGCJ_M4/edit?usp=sharing" target="_blank" rel="noreferrer">Write-Up</a>
+        </div>
+
+        <div class="grid">
+          <div class="card">
+            <h4>What it is</h4>
+            <p>
+              Face tracking sentry that is capable of facial tracking, detection, and recogntion. 
+              System can be used for focusing on a subject for videography purposes or hobbyist security system. 
+            </p>
+          </div>
+
+          <div class="card">
+            <h4>My role / contributions</h4>
+            <ul>
+              <li>Built FSM based computer vision structure which included detection, recognition, and tracking</li>
+              <li>Implemented PID control for motor control using connected microcontroller</li>
+              <li>Debugged MCU control issues, PID loop tuning, and vision optimization</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h4>Tech stack</h4>
+            <ul>
+              <li>Hardware: ESP32C3, PiCamera 2, 9 gram Muizei Servo Motors, Raspberry Pi 4B</li>
+              <li>Interfaces: SPI/I2C/UART/CAN</li>
+              <li>Software: C/C++, Python, OpenCV</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ADDITIONAL PROJECTS -->
+    <section>
+      <h2>Additional Projects (Exploratory)</h2>
+      <p class="note">
+        Earlier prototypes focused on rapid learning and integration; newer work emphasizes full documentation and repeatability.
+      </p>
+
+      <div class="stack">
+        <article class="project">
+          <h3>RF Speed Sensor</h3>
+          <p class="project-tagline">True ground speed sensor to give accurate speed of police cars</p>
+          <ul>
+            <li>Built FFT algorithm to analyze frequency shift and calculate vehicular speed</li>
+            <li>Used KLC1A transciever and transmitted results to display using bluetooth</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <h3>Light Based Alarm Clock</h3>
+          <p class="project-tagline">Light based alarm clock system to provide alternative method for inducing wakefulness by simulating natural illumination
+</p>
+          <ul>
+            <li>Wired and programmed neopixel LED strips with pulse width modulation program to gradually illuminate LEDs</li>
+            <li>Used transistors along with C programming to control rate of illumination </li>
+            <li>Power supplied through AC-adapter and reduced voltage ripple using RC-circuit to ensure consistent power</li>          </ul>
+        </article>
+
+        <article class="project">
+          <h3>Robotic Arm</h3>
+          <p class="project-tagline">Designed and built functional robotic arm using potentiometers, motors, and gearboxes to perform simple tasks</p>
+          <ul>
+            <li>Modeled and 3D printed custom grip system to assist in tasks involving picking and placing smooth objects</li>
+            <li>Robot functions were coded in C while receiving analog input from potentiometers</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>© <span id="year"></span> Your Name</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
